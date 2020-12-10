@@ -1,0 +1,5 @@
+-- Will, Isaac, Zhaoyu, Suihan
+CREATE TABLE SEEN_BY(
+spid INT NOT NULL REFERENCES EMPLOYEE(spid),
+icd_10_cm VARCHAR(30) NOT NULL REFERENCES DIAGNOSIS(icd_10_cm),
+PRIMARY KEY (spid, icd_10_cm));

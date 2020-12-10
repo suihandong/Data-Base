@@ -1,0 +1,7 @@
+-- Will, Isaac, Zhaoyu, Suihan
+CREATE TABLE PATIENT_PHONENUMBER(
+pid INT NOT NULL,
+phone_number VARCHAR(15) NOT NULL,
+PRIMARY KEY(phone_number),
+FOREIGN KEY(pid) REFERENCES PATIENT(pid)
+);
